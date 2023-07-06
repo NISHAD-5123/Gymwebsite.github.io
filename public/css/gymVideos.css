@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.Gym_Videos{
+        display:none;
+}
+#check{
+    display:none;
+}
+#check:checked ~ .Gym_Videos{
+    position: fixed;
+    top:10%;
+    left:0%;
+    padding:6rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap:3rem;
+    background-color:whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* .navbar .videos:hover ~ .Gym_Videos{
+    position: fixed;
+    top:10%;
+    left:0%;
+    padding:6rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap:3rem;
+    background-color:whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
+
+.video1,.video2,.video3{
+    padding:2rem;
+    width:27rem;
+    background-color: rgb(94, 160, 217);
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+}

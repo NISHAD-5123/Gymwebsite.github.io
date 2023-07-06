@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="css/product.css" rel="stylesheet">
+  <script>
+ 
+    const search = ()=>{
+    let searchInput = document.getElementById("search").value.toLowerCase();
+    let searchData = document.getElementById("searching");
+    let datavalue = document.getElementsByClassName("card");
+
+    for(let i=0;i<datavalue.length;i++){
+      var data = datavalue[i].getElementsByTagName("h5")[0].innerHTML.toLowerCase();
+      if(data){
+      if(data.indexOf(searchInput) >-1){
+        datavalue[i].style.display = " ";
+      }
+      else{
+           datavalue[i].style.display = "none";
+      }
+      }
+    } 
+}
+  </script>
+</head>
+<body>
+  {{>navbar}}
+ <div class="container-fluid bg-dark img-1 my-5 p-5">
+    <div class="col-10 mx-auto">
+      <h1 class="text-white text-center">We are the team of talent </h1>
+    </div>
+  </div>
+
+  <input type="text" placeholder="Search product..." id="search" onkeypress="search()"/> 
+  {{!-- <div class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></div> --}}
+ 
+
+  <div id="searching">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mx-auto Flex">
+        <div class="card mb-3 Flex" style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Boiled Egg</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content.This content is a little bit longer&nbsp;&nbsp;
+                  <button class="btn btn-sm btn-outline-primary" onClick=" window.open('/userPayment',productName())" >purchase</button>
+                  {{!-- <a href="/userPayment"><button class="btn btn-sm btn-outline-primary" >Purchase</button></a></p>                                                    --}}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 " style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a></p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 600px;">
+          <div class="row g-0 shadow ">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a>
+                   </p>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 mx-auto Flex">
+        <div class="card mb-3 Flex" style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 " style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 mx-auto Flex">
+        <div class="card mb-3 Flex" style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 " style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-12 mx-auto Flex">
+        <div class="card mb-3 Flex" style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 " style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 600px;">
+          <div class="row g-0 shadow">
+            <div class="col-md-4 ">
+              <img
+                src="https://images.pexels.com/photos/6651728/pexels-photo-6651728.jpeg?auto=compress&cs=tinysrgb&w=400"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer&nbsp;&nbsp;.
+                   <a href="/userPayment"><button class="btn btn-sm btn-outline-primary">Purchase</button></a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> {{!--  //searching div  --}}
+  {{>footer}}
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</html>

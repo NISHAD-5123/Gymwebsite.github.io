@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.Flex{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:2rem;
+}
+.img-1{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6G2gR3MJFxm8IeQUFRO6Wqf8G_cBknWVT_g&usqp=CAU");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  input{
+    padding-inline: 20px;
+    padding-block: 10px;
+    text-align: center;
+    text-indent: 2px;
+    background-color: whitesmoke; 
+    outline:none;
+    border:none;  
+    color:black;
+  }
+  input:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+  }
+  .searchIcon{
+    position:relative;
+    left: 20px;
+    top: -32px;
+}
+
+  @media screen  and (310px<=width<=400px){
+    .Flex{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin: auto;
+    }
+    .Flex img{
+        height: 250px;
+        width: 400px;
+    }
+}
+@media screen  and (401px<=width<=760px){
+    .Flex{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin: auto;
+    }
+    .Flex img{
+        height: 350px;
+        width: 520px;
+    }
+}
+
+  @media screen  and (761px<=width<=1200px){
+    .Flex{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: auto;
+  }
+
+}

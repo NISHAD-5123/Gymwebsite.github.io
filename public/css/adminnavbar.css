@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover, .navbar a:focus{
+    background-color: #3dadad;
+    border-radius: 5px;
+}
+.sidebar li a i {
+    font-size: 25px;
+}
+.navlink{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+ul{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+.img img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.sidebar li a{
+    text-decoration: none;
+    color:black;
+    /* margin:3rem; */
+}
+.sidebar li i{
+    margin: .5rem;
+}
+#check{
+    transition: .5s;
+}
+.sidebar{
+    z-index: 1;
+    transition: .5s;
+    transition-property: left;
+    left:0px;
+    position: absolute;
+    width:250px;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(194,29,253,1) 0%, rgba(104,190,182,1) 0%, rgba(252,69,88,1) 100%);
+}
+.sidebar li a:hover{
+    color:black
+}
+.sidebar li:hover,.sidebar label li:hover{
+    background-color:hsl(0, 0%, 96%);
+    border-radius: 10px;
+    margin-right: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#check:checked ~ .sidebar{
+    left:-190px;
+}
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size:25px;
+    width:60px;
+    margin-left: 165px;
+}
+#check{
+    display: none;
+}
+.sidebar label::before{
+    content: "";
+    color:white;
+    font-size:30px;
+    width:60px;
+    font-weight: bolder;
+    margin-left:10px;
+    cursor: pointer;
+}
+#check:checked ~ .sidebar label::before{
+    content: "";
+    color:white;
+    font-weight: bolder;
+    font-size:30px;
+    width:60px;
+    margin-left: 180px;
+    cursor: pointer;
+}
+.sidebar label i:hover{
+    cursor:pointer;
+}
+/* ul{
+    padding:-2rem !important;
+} */

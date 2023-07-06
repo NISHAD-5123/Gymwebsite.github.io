@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container_main{
+    margin-block: 2rem;
+    margin-left:20rem ;
+}
+.container_main thead tr th,.container_main tbody tr td{
+    padding:10px;
+    text-align: center;
+}

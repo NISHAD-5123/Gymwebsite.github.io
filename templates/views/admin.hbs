@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/adminnavbar.css" rel="stylesheet" />
+    <link href="css/adminbody.css" rel="stylesheet" />
+</head>
+<body>
+    {{>adminnavbar}}
+    <div class="container_main">
+      <div class="record">
+        <h1>Enrolled student records</h1>
+        <table class="table_data">
+          <thead>
+            <tr>
+            <th>Sr No. </th>
+            <th>Name </th>
+            <th>Email ID </th>
+            <th>Date </th>
+            <th>Time </th>
+            <th>Product Name </th>
+            <th>Amount</th>
+            </tr>  
+          </thead>
+      <tbody>
+
+        {{#paymentdetail}}
+          <tr>
+          <td>{{@index}}</td>
+          <td>{{this.name}}</td>
+          <td>{{this.email}}</td>
+          <td>{{this.date}}</td>
+          <td>{{this.time}}</td>
+          <td>{{this.product}}</td>
+          <td>{{this.amount}}</td>
+          </tr>
+        {{/paymentdetail}}
+          <!--
+          <td>{{paymentdetail.date}}</td>
+          <td>{{paymentdetail.product}}</td>
+          <td>{{paymentdetail.amount}}</td>
+          </tr> -->
+          
+          {{!-- <tr>
+          <td>2</td>
+          <td>{{userdata[2].name}}</td>
+          <td>{{userdata[2].email}}</td>
+          <td>{{paymentdetail[2].date}}</td>
+          <td>{{paymentdetail[2].product}}</td>
+          <td>{{paymentdetail[2].amount}}</td>
+          </tr>  
+          <tr>
+          <td>3</td>
+          <td>{{userdata[3].name}}</td>
+          <td>{{userdata[3].email}}</td>
+          <td>{{paymentdetail[3].date}}</td>
+          <td>{{paymentdetail[3].product}}</td>
+          <td>{{paymentdetail[3].amount}}</td>
+          </tr>           --}}
+      </tbody>
+        </table>
+      </div>
+    </div>
+  {{!-- {{>footer}} --}}
+</body>
+</html>

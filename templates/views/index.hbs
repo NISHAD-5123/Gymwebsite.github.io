@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="css/pricing.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+  {{>navbar}}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Get Stronger!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  {{!-- <iframe width="942" height="530" src="https://www.youtube.com/embed/Yko3GMseY40" title="Sony A7IV Cinematic FITNESS VIDEO Featuring FE 16-35mm Power zoom - FE 4/PZ A7m4 Footage" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> --}}
+
+   {{!-- <video autoplay controls loop>
+                <source src="https://youtu.be/Yko3GMseY40" type="video/mp4"> 
+            </video> --}}
+  <div id="carouselExampleCaptions" id="carouselExampleAutoplaying" id="carouselExampleInterval" class="carousel slide"
+    data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions " data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions " data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions " data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active image img-1" data-bs-interval="3000">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-1 fw-bold">Lemon With Cold-Sprite</h5>
+          <p class="fs-2 fw-bold">One of the most favorite Drinks of people</p>
+        </div>
+      </div>
+      <div class="carousel-item image img-2" data-bs-interval="3000">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-1 fw-bold"> Lemon With Blackberry </h5>
+          <p class="fs-2 fw-bold">One of the best mixture fruit juice</p>
+        </div>
+      </div>
+      <div class="carousel-item image img-3" data-bs-interval="3000">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="fs-1 fw-bold">Mango Juice</h5>
+          <p class="fs-2 fw-bold">One of the most popular Juice in INDIA</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      {{!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> --}}
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      {{!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> --}}
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <br>
+  <br>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      <div class="col pl-5">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8NDAwKjQwMCUyMGd5bSUyMHJlbGF0ZWR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dumbell</h5>
+            <p class="card-text">free weights, are a type of exercise equipment that do not require the use of exercise
+              machines. Dumbbells are used to strengthen and tone muscles. Fixed weight: Dumbbells that are made with
+              cast
+              iron </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1623874514711-0f321325f318?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8NDAwKjQwMCUyMGd5bSUyMHJyZWxhdGVkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Gym Area</h5>
+            <p class="card-text">A gym is a large room, usually containing special equipment, where people go to do
+              physical exercise and get fit. The gym has exercise bikes and running machines. While some guests play
+              golf,
+              others work out in the hotel gym. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNwb3J0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Weight Lifting</h5>
+            <p class="card-text">Building stronger muscles isn’t just about vanity, either. According to the Mayo
+              Clinic,
+              strength training not only helps with weight control, but also stops bone loss and can even build new bone
+              and provide the benefit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container py-3">
+    <header>
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h4 class="display-7 fw-normal">MEMBERSHIP DETAILS</h4>
+        <hr>
+        <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this
+          Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+      </div>
+    </header>
+
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="pricing-table-3 basic">
+          <div class="pricing-table-header">
+            <h4><strong>BASIC</strong></h4>
+            <p>Loerm Ipsum Donor Sit Amet</p>
+          </div>
+          <div class="price"><strong>$3</strong> / MONTH</div>
+          <div class="pricing-body">
+            <ul class="pricing-table-ul">
+              <li><i class="fa fa-send"></i> Unlimited Workout Option</li>
+              <li><i class="fa fa-cloud"></i> Air Conditioned Premises</li>
+              <li><i class="fa fa-database"></i> Limited Training</li>
+              <li class="not-avail"><i class="fa fa-clock-o"></i> 24X7 Support</li>
+              <li class="not-avail"><i class="fa fa-envelope"></i> Email Support</li>
+            </ul>
+            <a href="/payment" class="view-more">Get Membership</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="pricing-table-3 premium">
+          <div class="pricing-table-header">
+            <h4><strong>PREMIUM</strong></h4>
+            <p>Loerm Ipsum Donor Sit Amet</p>
+          </div>
+          <div class="price"><strong>$8</strong> / MONTH</div>
+          <div class="pricing-body">
+            <ul class="pricing-table-ul">
+              <li><i class="fa fa-send"></i> Unlimited Workout Option</li>
+              <li><i class="fa fa-cloud"></i> Air Conditioned Premises & Guide</li>
+              <li><i class="fa fa-database"></i> Unlimited Training</li>
+              <li class="not-avail"><i class="fa fa-clock-o"></i> 24X7 Support</li>
+              <li class="not-avail"><i class="fa fa-envelope"></i> Email Support</li>
+            </ul><a href="/payment" class="view-more">Get Membership</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="pricing-table-3 business">
+          <div class="pricing-table-header">
+            <h4><strong>BUSINESS</strong></h4>
+            <p>Loerm Ipsum Donor Sit Amet</p>
+          </div>
+          <div class="price"><strong>$12</strong> / MONTH</div>
+          <div class="pricing-body">
+            <ul class="pricing-table-ul">
+              <li><i class="fa fa-send"></i> Unlimited Workout Option</li>
+              <li><i class="fa fa-cloud"></i> Air Conditioned Premises & Guide</li>
+              <li><i class="fa fa-database"></i> Personal Trainer & Health Nutrition</li>
+              <li class="not-avail"><i class="fa fa-clock-o"></i> 24X7 Support</li>
+              <li class="not-avail"><i class="fa fa-envelope"></i> Email Support</li>
+            </ul><a href="/payment" class="view-more">Get Membership</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>testimonial}}
+  {{>footer}}
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</html>

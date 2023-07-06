@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.navbar-dark .navbar-toggler-icon, .navbar-light .navbar-toggler-icon {
+    background-image:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAP1BMVEX///8AAACfn5+pqamkpKT4+PgPDw+AgID7+/vq6uqFhYXCwsK/v7/y8vLGxsbt7e0rKys6Ojrg4OAfHx8wMDCaWyPvAAAA80lEQVRoge3aWw6DIBBAUbD1AVZ87n+tbdM/wb/ODIn3bOAmpkUGcQ4AAAAQNaRGUGqvstELi0OpG6SzXyHvtp1GuMsfd6/R9b7Pwjpd78/dUSs8nsKNVripJfzSCr9q+XHZ/Z3aQ6O7FNbrbZXvrlvedW6Ku2x276dS9yOkh6BUeEMAAFCtOT0FpfkiO0Xh8amLxY1AUNh0LYW9wCC87/nZ8wmZaVEK06LZo77htGi2gKgsmUdxfLJ6STiz1yIAADUyOkSdeptjY6uD8naR7xY/DdxuWjT74MW0KIZp0e5ygtl1DLsLKE78ys1VFgAAAPiTN4CUHJEzRtJXAAAAAElFTkSuQmCC ";
+}
+.navbar a:hover, .navbar a:focus{
+    background-color: #3dadad;
+    border-radius: 5px;
+}
+.navbar .signup{
+    background-color: blue;
+    border-radius: 5px;
+}
+.navbar .signup a:hover{
+    background-color: rgb(81, 81, 239);
+    border-radius: 5px;
+}
